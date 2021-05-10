@@ -1,0 +1,14 @@
+
+[config]
+name="ATT"
+binary="ios-att.xcframework"
+initialization="ios_att_init"
+deinitialization="ios_att_deinit"
+
+[dependencies]
+linked=[]
+embedded=[]
+system=["AppTrackingTransparency.framework"]
+capabilities=[]
+files=[]
+[plist]

@@ -1,0 +1,32 @@
+{
+  "name": "ios-att",
+  "display_name": "AppTrackingTransparency",
+  "description": "",
+  "version": "1.0.0",
+  "license": "MIT",
+  "url": "https://github.com/DrMoriarty/godot-ios-att",
+  "category": "misc",
+  "godot_version": "3.3.0",
+  "author": {
+    "name": "DrMoriarty",
+    "url": "https://github.com/DrMoriarty",
+    "donate": "https://ko-fi.com/drmoriarty"
+  },
+  "dependencies": [
+    "nativelib-export"
+  ],
+  "files": {
+    "scripts": "scripts",
+    "nativelib-export": "addons/nativelib-export"
+  },
+  "autoload": {
+    "ATT": "*res://scripts/att.gd"
+  },
+  "platform_ios": {
+    "files": {
+      "bin/ios-att.debug.xcframework": "ios/plugins/ios-att/ios-att.debug.xcframework",
+      "bin/ios-att.release.xcframework": "ios/plugins/ios-att/ios-att.release.xcframework",
+      "ios-att.gdip": "ios/plugins/ios-att/"
+    }
+  }
+}
