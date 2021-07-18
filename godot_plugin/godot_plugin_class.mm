@@ -188,6 +188,7 @@ void PluginClass::requestTracking() {
         }];
     } else {
         // Fallback on earlier versions
+        emit_signal("requestCompleted", 3);
     };
 }
 
@@ -196,6 +197,6 @@ int PluginClass::status() {
         return (int)[ATTrackingManager trackingAuthorizationStatus];
     } else {
         // Fallback on earlier versions
-        return 0;
+        return 3;
     }
 }
